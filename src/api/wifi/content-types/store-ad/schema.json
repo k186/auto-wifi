@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "store_ads",
+  "info": {
+    "singularName": "store-ad",
+    "pluralName": "store-ads",
+    "displayName": "storeAd",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "storeName": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text"
+    },
+    "wxQR": {
+      "type": "string"
+    }
+  }
+}

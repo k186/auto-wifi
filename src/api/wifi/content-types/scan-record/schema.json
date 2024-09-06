@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scan_records",
+  "info": {
+    "singularName": "scan-record",
+    "pluralName": "scan-records",
+    "displayName": "ScanRecord"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wifi.wifi-user"
+    },
+    "wifi": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wifi.wifi-list"
+    }
+  }
+}

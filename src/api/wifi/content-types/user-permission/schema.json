@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_permissions",
+  "info": {
+    "singularName": "user-permission",
+    "pluralName": "user-permissions",
+    "displayName": "UserPermission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "permissionName": {
+      "type": "string",
+      "required": true
+    },
+    "permissionCode": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

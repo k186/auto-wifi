@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_statuses",
+  "info": {
+    "singularName": "user-status",
+    "pluralName": "user-statuses",
+    "displayName": "UserStatus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "statusName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

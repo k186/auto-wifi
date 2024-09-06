@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wifi_users",
+  "info": {
+    "singularName": "wifi-user",
+    "pluralName": "wifi-users",
+    "displayName": "wifiUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "lastLoginTime": {
+      "type": "datetime"
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "permissions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wifi.user-permission"
+    },
+    "status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wifi.user-status"
+    },
+    "upUserId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wifi.wifi-user"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wifi.wifi-user"
+    },
+    "wifiLists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wifi.wifi-list",
+      "mappedBy": "user"
+    },
+    "ads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wifi.store-ad"
+    }
+  }
+}

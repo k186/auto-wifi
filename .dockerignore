@@ -1,0 +1,15 @@
+.tmp/
+.cache/
+.git/
+build/
+node_modules/
+.env
+.env.example
+data/
+backup/
+*.tar
+*.md
+public/mobileconfig/*.mobileconfig
+public/ssh/sshkey
+public/ssh/*.key
+public/ssh/*.crt
